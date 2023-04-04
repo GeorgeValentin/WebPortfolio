@@ -10,15 +10,15 @@ const TechStack = ({ techStack }) => {
 
       <div className="list-group list-group-flush justify-content-center flex-column">
         <div className="d-flex justify-content-center flex-row gap-3 flex-wrap">
-          {techStack.map((techStack, index) => {
+          {techStack.map((stack, index) => {
             return (
               <div
                 className="d-flex flex-column justify-content-center align-items-center"
                 key={index}
               >
-                <div>{Object.keys(techStack)}</div>
+                <div>{Object.keys(stack)}</div>
 
-                {Object.values(techStack).map((logoValue, index) => {
+                {Object.values(stack).map((logoValue, index) => {
                   return (
                     <div className="list-group-item" key={index}>
                       <LogoContainer logoValue={logoValue} />

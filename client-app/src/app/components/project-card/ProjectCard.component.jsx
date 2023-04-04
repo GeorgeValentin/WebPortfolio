@@ -3,7 +3,7 @@ import TechStack from "../tech-stack/TechStack.component";
 import "./ProjectCard.styles.scss";
 
 const ProjectCard = ({ project }) => {
-  const { name, description, projectType, appLink, codeRepoLink, techStack } =
+  const { name, description, projectType, techStack, appLink, codeRepoLink } =
     project;
 
   return (

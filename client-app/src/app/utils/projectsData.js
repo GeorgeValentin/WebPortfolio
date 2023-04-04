@@ -14,6 +14,7 @@ import {
 
 export const projects = [
   {
+    id: 1,
     name: "Interactive Library Website",
     description:
       "A Single Page Application that showcases visually and with some animations how a Library would look like. This app the focuses on aspect rather than functionality.",
@@ -24,6 +25,7 @@ export const projects = [
       "https://github.com/GeorgeValentin/Interactive-Library-Website",
   },
   {
+    id: 2,
     name: "E-Commerce Clothing Store",
     description:
       "A front-end e-commerce application for a clothing store which gets data from Firebase Firestore and manages state with redux. It also provides autehntication with Firebase.",
@@ -37,6 +39,7 @@ export const projects = [
     codeRepoLink: "https://github.com/GeorgeValentin/E-Commerce_Clothing_Store",
   },
   {
+    id: 3,
     name: "Human Capital Management API",
     description:
       "A back-end API application that facilitates access to data from a SQL Server database that I have created and all manipulation operations.",
@@ -50,6 +53,7 @@ export const projects = [
     codeRepoLink: "https://github.com/GeorgeValentin/HumanCapitalManagementAPI",
   },
   {
+    id: 4,
     name: "Human Capital Management",
     description:
       "This front-end app uses the HumanCapitalManagement API to showcase that data alongside the operations the API provides in an User Interface.",
@@ -63,6 +67,7 @@ export const projects = [
     codeRepoLink: "https://github.com/GeorgeValentin/HumanCapitalManagementUI",
   },
   {
+    id: 5,
     name: "Car Service",
     description:
       "A full-stack application built with MVC that allows the user to manage his information when it comes to his cars at a service and make appointments.",

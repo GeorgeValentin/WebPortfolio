@@ -28,7 +28,7 @@ export const projects = [
     id: 2,
     name: "E-Commerce Clothing Store",
     description:
-      "A front-end e-commerce application for a clothing store which gets data from Firebase Firestore and manages state with redux. It also provides autehntication with Firebase.",
+      "A front-end e-commerce application for a clothing store which gets data from Firebase Firestore and manages state with redux. It also provides authentication with Firebase.",
     projectType: "front-end",
     techStack: [
       { "React.js": reactJsLogo },

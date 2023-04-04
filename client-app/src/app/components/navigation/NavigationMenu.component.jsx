@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
-import "./NavigationMenu.styles.scss";
 import Footer from "../footer/Footer.component";
+import "./NavigationMenu.styles.scss";
 
 const NavigationMenu = () => {
   const [activeButton, setActiveButton] = useState(0);

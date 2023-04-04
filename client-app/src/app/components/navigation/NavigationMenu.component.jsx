@@ -1,14 +1,23 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 import "./NavigationMenu.styles.scss";
 import Footer from "../footer/Footer.component";
 
 const NavigationMenu = () => {
-  const [activeButton, setIsActiveButton] = useState(false);
+  const [activeButton, setActiveButton] = useState(0);
 
-  const onClickLinkHandler = (event) => {
-    setIsActiveButton(event.target.id);
+  useEffect(() => {
+    const storedActiveButton = localStorage.getItem("activeButton");
+    if (storedActiveButton) {
+      setActiveButton(storedActiveButton);
+    }
+  }, []);
+
+  const onChangeActiveButtonState = (event) => {
+    setActiveButton(event.target.id);
+
+    localStorage.setItem("activeButton", event.target.id);
   };
 
   return (
@@ -18,7 +27,7 @@ const NavigationMenu = () => {
           to="/"
           className={activeButton === "1" ? "active" : undefined}
           id={"1"}
-          onClick={onClickLinkHandler}
+          onClick={onChangeActiveButtonState}
         >
           HOME
         </Link>
@@ -26,7 +35,7 @@ const NavigationMenu = () => {
           to="/projects"
           className={activeButton === "2" ? "active" : undefined}
           id={"2"}
-          onClick={onClickLinkHandler}
+          onClick={onChangeActiveButtonState}
         >
           PROJECTS
         </Link>
@@ -34,7 +43,7 @@ const NavigationMenu = () => {
           to="/about"
           className={activeButton === "3" ? "active" : undefined}
           id={"3"}
-          onClick={onClickLinkHandler}
+          onClick={onChangeActiveButtonState}
         >
           ABOUT
         </Link>
@@ -42,7 +51,7 @@ const NavigationMenu = () => {
           to="/contact"
           className={activeButton === "4" ? "active" : undefined}
           id={"4"}
-          onClick={onClickLinkHandler}
+          onClick={onChangeActiveButtonState}
         >
           CONTACT
         </Link>

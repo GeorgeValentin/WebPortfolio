@@ -1,15 +1,13 @@
 .card {
-  width: 24rem;
+  width: 22rem;
 
-  .list-group {
-    padding: 0.5rem 0rem 0.75rem;
+  .card-body {
+    padding-bottom: 0.25rem;
 
-    .logo-img {
-      height: 3rem;
-      width: 3rem;
+    .project-description {
+      text-align: justify;
     }
 
   }
-
+  
 }
-

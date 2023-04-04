@@ -6,3 +6,7 @@ export const scssLogo = "../../../images/scss_logo.png";
 export const jsLogo = "../../../images/js_logo.png";
 export const sqlServerLogo = "../../../images/sql-server_logo.png";
 export const mvcLogo = "../../../images/mvc_logo.png";
+export const cssLogo = "../../../images/css-3_logo.png";
+export const googleFirebaseLogo = "../../../images/google-firebase_logo.svg";
+export const reduxLogo = "../../../images/redux_logo.png";
+export const blazorLogo = "../../../images/blazor_logo.png";

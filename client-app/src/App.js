@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import NavigationMenu from "./app/components/navigation/NavigationMenu";
-import AboutPage from "./app/pages/AboutPage";
-import HomePage from "./app/pages/HomePage";
-import ProjectsPage from "./app/pages/projects/ProjectsPage.component";
-import ContactPage from "./app/pages/ContactPage";
+import NavigationMenu from "./app/components/navigation/NavigationMenu.component";
+import AboutPage from "./app/pages/about/AboutPage.page";
+import HomePage from "./app/pages/home/HomePage.page";
+import ProjectsPage from "./app/pages/projects/ProjectsPage.page";
+import ContactPage from "./app/pages/contact/ContactPage.page";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Routes>
         <Route path="/" element={<NavigationMenu />}>
           <Route index={true} element={<HomePage />} />
@@ -16,7 +17,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Route>
       </Routes>
-    </div>
+    </Fragment>
   );
 }
 

@@ -5,44 +5,74 @@ import {
   jsLogo,
   mvcLogo,
   reactJsLogo,
-  scssLogo,
   sqlServerLogo,
+  cssLogo,
+  googleFirebaseLogo,
+  reduxLogo,
+  blazorLogo,
 } from "./logos";
 
 export const projects = [
   {
-    name: "Some Project1",
+    name: "Interactive Library Website",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    techStack: [{ "C#": cSharpLogo }],
+      "A Single Page Application that showcases visually and with some animations how a Library would look like. This app the focuses on aspect rather than functionality.",
+    projectType: "front-end",
+    techStack: [{ HTML: htmlLogo }, { JavaScript: jsLogo }, { CSS: cssLogo }],
+    appLink: "https://georgevalentin.github.io/Interactive-Library-Website/",
+    codeRepoLink:
+      "https://github.com/GeorgeValentin/Interactive-Library-Website",
   },
   {
-    name: "Some Project2",
+    name: "E-Commerce Clothing Store",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    techStack: [{ "React.js": reactJsLogo }],
+      "A front-end e-commerce application for a clothing store which gets data from Firebase Firestore and manages state with redux. It also provides autehntication with Firebase.",
+    projectType: "front-end",
+    techStack: [
+      { "React.js": reactJsLogo },
+      { Firebase: googleFirebaseLogo },
+      { Redux: reduxLogo },
+    ],
+    appLink: "https://peppy-lebkuchen-4e89ba.netlify.app/",
+    codeRepoLink: "https://github.com/GeorgeValentin/E-Commerce_Clothing_Store",
   },
   {
-    name: "Some Project3",
+    name: "Human Capital Management API",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    techStack: [{ "NET MVC": mvcLogo }, { "SQL Server": sqlServerLogo }],
-  },
-  {
-    name: "Some Project4",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    techStack: [{ HTML: htmlLogo }, { JavaScript: jsLogo }, { Scss: scssLogo }],
-  },
-  {
-    name: "Some Project5",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "A back-end API application that facilitates access to data from a SQL Server database that I have created and all manipulation operations.",
+    projectType: "back-end",
     techStack: [
       { "C#": cSharpLogo },
-      { "REST API": dotNetLogo },
-      { "SQL Server": sqlServerLogo },
-      { "React.js": reactJsLogo },
+      { "Rest Web API": dotNetLogo },
+      { "Sql Server": sqlServerLogo },
     ],
+    appLink: "",
+    codeRepoLink: "https://github.com/GeorgeValentin/HumanCapitalManagementAPI",
+  },
+  {
+    name: "Human Capital Management",
+    description:
+      "This front-end app uses the HumanCapitalManagement API to showcase that data alongside the operations the API provides in an User Interface.",
+    projectType: "front-end",
+    techStack: [
+      { "C#": cSharpLogo },
+      { Blazor: blazorLogo },
+      { HTML: htmlLogo },
+    ],
+    appLink: "",
+    codeRepoLink: "https://github.com/GeorgeValentin/HumanCapitalManagementUI",
+  },
+  {
+    name: "Car Service",
+    description:
+      "A full-stack application built with MVC that allows the user to manage his information when it comes to his cars at a service and make appointments.",
+    projectType: "full-stack",
+    techStack: [
+      { "C#": cSharpLogo },
+      { "ASP NET MVC": mvcLogo },
+      { "SQL Server": sqlServerLogo },
+    ],
+    appLink: "",
+    codeRepoLink: "https://github.com/GeorgeValentin/CarService",
   },
 ];

@@ -1,0 +1,38 @@
+.contact-page-header {
+    margin-top: 5.4rem;
+    margin-bottom: 2rem;
+}
+
+.contact-page-form {
+    width: 40%;
+    margin: auto;
+
+    &_field {
+        width: 75%;
+        border:1.5px solid grey;
+        border-radius: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    &_submit {
+        width: 50%;
+    }
+}
+
+#contact-page-form_message-field {
+    height: 6rem;
+}
+
+.contact-page-form-information {
+    margin-top: 3.5rem;
+    text-align: center;
+
+    &_elements {
+        width: 30%;
+        margin: auto;
+    }
+    
+    &_logo {
+        width: 1.5rem;
+    }
+}
